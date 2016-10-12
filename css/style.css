@@ -1,12 +1,113 @@
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('../fonts/Vollkorn-Regular.otf');
+}
+
 body {
-  font-family: 'Kievit';
-  font-size: 17px;
+  font-family: 'Vollkorn';
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+body > * {
+  width: 33.333%;
+}
+
+article {
+  margin: 0 auto;
 }
 
 body, a, a:visited {
-  color: #111;
+  color: #212121;
 }
 
-h1, h2, h3 {
-  font-family: 'MiloSlab';
+aside {
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+  position: fixed;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#left {
+  direction: rtl;
+  left: 0;
+}
+
+#left ul li {
+  direction: ltr;
+}
+
+#right {
+  left: 66.666%;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+aside ul li {
+  margin: 0;
+  max-width: 300px;
+  padding: 20px;
+}
+
+aside ul li h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+aside ul li h2 .map-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-right: 3px;
+}
+
+aside ul li h2 .map-year {
+  opacity: 0.7;
+}
+
+aside ul li img {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 80%;
+}
+
+.buttons a {
+  text-align: center;
+}
+
+body, .map {
+/*.leaflet-bar a, .leaflet-bar a:hover */
+  background-color: #04C8FF;
+}
+
+#title {
+  opacity: 0.9;
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 1450px;
+}
+
+.leaflet-container {
+  background: none;
 }

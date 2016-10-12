@@ -1,5 +1,5 @@
-# New York City Maps by Decade
+# Along the Hudson
 
-http://spacetime.nypl.org/maps-by-decade/
+[![Along the Hudson](images/along-the-hudson.png)](http://nypl-spacetime.github.io/along-the-hudson/)
 
-[![Maps by Decade](images/screenshot.png)](http://spacetime.nypl.org/maps-by-decade/)
+http://nypl-spacetime.github.io/along-the-hudson
