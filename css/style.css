@@ -4,6 +4,21 @@
 }
 
 body {
+  background-image: url("../images/zig-zag.png");
+}
+
+body, .map {
+/*.leaflet-bar a, .leaflet-bar a:hover */
+  background-color: #0CD7EB;
+  font-size: 18px;
+}
+
+body, a, a:visited {
+  /*color: #f1f1f1;*/
+  color: #212121;
+}
+
+body {
   font-family: 'Vollkorn';
   margin: 0;
   padding: 0;
@@ -18,8 +33,8 @@ article {
   margin: 0 auto;
 }
 
-body, a, a:visited {
-  color: #212121;
+article p {
+  text-align: center;
 }
 
 aside {
@@ -52,25 +67,28 @@ aside ul {
   margin: 0;
   padding: 0;
   width: 100%;
+  padding: 20px 0;
 }
 
 aside ul li {
   margin: 0;
   max-width: 300px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 aside ul li h2 {
   display: flex;
+  text-align: left;
   justify-content: space-between;
   margin: 0;
+  font-size: 18px;
 }
 
 aside ul li h2 .map-title {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   padding-right: 3px;
 }
 
@@ -93,13 +111,7 @@ aside ul li img {
   text-align: center;
 }
 
-body, .map {
-/*.leaflet-bar a, .leaflet-bar a:hover */
-  background-color: #04C8FF;
-}
-
 #title {
-  opacity: 0.9;
   width: 100%;
 }
 
