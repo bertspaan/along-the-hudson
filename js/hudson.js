@@ -5,20 +5,16 @@ var zoom = 9
 
 var hoverDisabled = false
 
-// var hudsonStyle = {
-//   color: '#FF8100',
-//   weight: 0,
-//   opacity: 0.7,
-//   fillOpacity: .9
-// }
-
 var hudsonStyle = {
-  color: '#FF8100',
-  weight: 2,
-  opacity: 1,
-  fillOpacity: 0
-}
+  // color: '#FF8100',
+  color: '#FADD19',
 
+  weight: 3,
+  opacity: 0.7,
+  fillOpacity: .9,
+  lineCap: 'round',
+  lineJoin: 'round'
+}
 
 var outlineStyle = {
   color: '#39484c',
@@ -159,6 +155,28 @@ function findMaps (latlng, callback) {
   }
 }
 
+function createModalMap(map) {
+  var src = 'http://images.nypl.org/index.php?id=' + map.properties.digital_id + '&t=q'
+  var modal = d3.select('body').append('div')
+    .attr('class', 'modal')
+    .on('click', function () {
+      removeModalMap()
+    })
+
+  modal.append('div')
+    .attr('class', 'image')
+    .style('background-image', 'url(' + src + ')')
+
+  d3.select('body')
+    .style('overflow', 'hidden')
+}
+
+function removeModalMap() {
+  d3.select('.modal').remove()
+  d3.select('body')
+    .style('overflow', 'auto')
+}
+
 function fillList (selector, hoveredMaps) {
   var mapList = d3.select(selector).selectAll('li')
     .data(hoveredMaps, function (d) {
@@ -191,6 +209,9 @@ function fillList (selector, hoveredMaps) {
     .attr('alt', function (d) {
       return d.properties.name
     })
+    .on('click', function (d) {
+      createModalMap(d)
+    })
     .attr('src', function (d) {
       return 'http://images.nypl.org/index.php?id=' + d.properties.digital_id + '&t=w'
     })
@@ -198,14 +219,13 @@ function fillList (selector, hoveredMaps) {
   var buttons = mapListItem.append('div')
     .attr('class', 'buttons')
 
-  buttons.append('a')
-    .attr('href', 'javascript:void(0)')
-    .text('View on map')
-    .on('click', function(d) {
-      var tileUrl = 'http://maps.nypl.org/warper/maps/tile/' + urnToMapId(d.properties.id) + '/{z}/{x}/{y}.png'
-      mapwarperLayer.setUrl(tileUrl)
-    })
-
+  // buttons.append('a')
+  //   .attr('href', 'javascript:void(0)')
+  //   .text('View on map')
+  //   .on('click', function(d) {
+  //     var tileUrl = 'http://maps.nypl.org/warper/maps/tile/' + urnToMapId(d.properties.id) + '/{z}/{x}/{y}.png'
+  //     mapwarperLayer.setUrl(tileUrl)
+  //   })
 
   buttons.append('a')
     .attr('target', '_blank')

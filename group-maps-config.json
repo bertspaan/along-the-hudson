@@ -1,0 +1,11 @@
+{
+  "bandSize": 10000,
+  "geometryOperation": "ST_Intersects",
+  "geometryBuffer": 500,
+  "yearMin": 1000,
+  "yearMax": 5000,
+  "minArea": 1000000,
+  "maxArea": 500000000,
+  "buffer": 25,
+  "simplifyTolerance": 0.00005
+}
