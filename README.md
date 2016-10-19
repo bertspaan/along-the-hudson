@@ -1,12 +1,10 @@
-# Along the Hudson
+![Along the Hudson](images/along-the-hudson-small.png)
 
-<a href="http://bertspaan.nl/along-the-hudson"><img style="width: 250px;" src="images/along-the-hudson.png"</a>
+Maps along the Hudson river from the <a href="http://digitalcollections.nypl.org/">New York Public Library's Digital Collections</a>,  using data from the <a href="http://spacetime.nypl.org">NYC Space/Time Directory</a>.
 
 Along the Hudson uses [Leaflet](http://leafletjs.com/), [RBush](https://github.com/mourner/rbush), [Turf](http://turfjs.org/) and [D3](https://d3js.org/).
 
 ## Data
-
-Along the Hudson uses data from the [NYC Space/Time Directory](http://spacetime.nypl.org/).
 
 [`data/all.geojson`](data/all.geojson) and [`data/grouped.geojson`](data/grouped.geojson) are created with [group-maps](https://github.com/nypl-spacetime/group-maps):
 
