@@ -6,9 +6,7 @@ var zoom = 9
 var hoverDisabled = false
 
 var hudsonStyle = {
-  // color: '#FF8100',
   color: '#FADD19',
-
   weight: 3,
   opacity: 0.7,
   fillOpacity: .9,
@@ -32,6 +30,16 @@ var mapStyle = {
 }
 
 var map = L.map('map', {
+  maxBounds: [
+    [
+      39.90130858574735,
+      -75.091552734375
+    ],
+    [
+      43.82660134505382,
+      -72.542724609375
+    ]
+  ],
   scrollWheelZoom: false,
   touchZoom: false,
   minZoom: zoom,
