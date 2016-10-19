@@ -1,4 +1,6 @@
-![Along the Hudson](images/along-the-hudson-small.png)
+[![Along the Hudson](images/along-the-hudson-small.png)](http://bertspaan.nl/along-the-hudson)
+
+http://bertspaan.nl/along-the-hudson
 
 Maps along the Hudson river from the <a href="http://digitalcollections.nypl.org/">New York Public Library's Digital Collections</a>,  using data from the <a href="http://spacetime.nypl.org">NYC Space/Time Directory</a>.
 
