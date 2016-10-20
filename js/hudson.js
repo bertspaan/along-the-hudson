@@ -1,4 +1,4 @@
-var tileUrl = 'https://api.mapbox.com/styles/v1/nypllabs/ciqs7ai4a0000cwm4663mv4x7/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibnlwbGxhYnMiLCJhIjoiSFVmbFM0YyJ9.sl0CRaO71he1XMf_362FZQ'
+var tileUrl = 'https://api.mapbox.com/styles/v1/bertspaan/cio0gk14s000hainh1ghuhmyu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmVydHNwYWFuIiwiYSI6ImR3dERiQk0ifQ.DLbScmbRohc3Sqv7prfhqw'
 
 var center = [41.91, -73.85]
 var zoom = 9
