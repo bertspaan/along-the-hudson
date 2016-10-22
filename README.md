@@ -1,4 +1,6 @@
-[![Along the Hudson](images/along-the-hudson-small.png)](http://bertspaan.nl/along-the-hudson)
+# Along the Hudson
+
+[![Along the Hudson](along-the-hudson.png)](http://bertspaan.nl/along-the-hudson)
 
 http://bertspaan.nl/along-the-hudson
 
