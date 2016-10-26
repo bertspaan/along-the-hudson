@@ -10,6 +10,8 @@ Along the Hudson uses [Leaflet](http://leafletjs.com/), [RBush](https://github.c
 
 ## Data
 
+Data comes from [NYPL Map Warper](http://maps.nypl.org/warper/), via the [NYC Space/Time Directory](http://spacetime.nypl.org/#data). Go to http://spacetime.nypl.org/#data if you want to use this data yourself.
+
 [`data/all.geojson`](data/all.geojson) and [`data/grouped.geojson`](data/grouped.geojson) are created with [group-maps](https://github.com/nypl-spacetime/group-maps):
 
     spacetime-group-maps -c group-maps-config.json -g data/hudson.geojson -o data
